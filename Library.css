@@ -1,0 +1,59 @@
+body {
+  font-family: 'Gill Sans', sans-serif;
+  background-color: #f5dfbf;
+  padding: 20px;
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 40px;
+  color: Navy;
+}
+
+h2 {
+  color: #854D27;
+}
+
+h3 {
+  color: #854D27;
+}
+
+.book-display {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.book-container {
+  width: 500px;
+  margin: 20px;
+  text-align: center;
+}
+
+.book-container img {
+  width: 100%;
+}
+
+.book {
+  position: absolute;
+  width: 40px;
+  height: 35px;
+  background-image: url(HorusBook.png);
+  background-size: contain;
+  animation: fall 10s ease-in-out infinite;
+  animation-name: fall;
+
+}
+@keyframes fall {
+  0% {
+    top: 0;
+  }
+  100% {
+    top: 100%;
+  }
+}
+
+ 
+

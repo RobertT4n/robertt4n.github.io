@@ -1,0 +1,47 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js">
+    </script>
+    <title>Side Projects</title>
+    
+</head>
+<body style="font-family: 'Gill Sans', sans-serif; background-color: FFE2D1">
+    &nbsp;&nbsp;
+    <h1 style="color:rebeccapurple; font-family:gill sans; text-align: center;">What I'm working on</h1>
+<nav>
+    <a href="index.html">back to main</a>
+</nav>
+
+    <p style="text-align: center;">Here is a project I am working on. Open to any suggestions for improvements: </p>
+    <nav style="text-align: center;">
+        <a href="https://www.youtube.com/watch?v=xvFZjo5PgG0">Project 1A Dec 2022</a>
+    </nav>
+    &nbsp;&nbsp;
+    
+    <div id="chatbot">
+    <input id="input"></input>
+    <button id="submit" style="background-color: grey; color: yellowgreen;">Asky away</button>
+</div>
+
+<script>
+    var input = document.getElementById("input");
+    var submit = document.getElementById("submit");
+    var chatbot = document.getElementById("chatbot");
+
+    submit.addEventListener("click", function () {
+      axios.post("https://api.openai.com/v1/engines/davinci/completions", {
+        prompt: input.value,
+        api_key: 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
+      }).then(function(response) {
+        var text = response.data.choices[0].text;
+        chatbot.innerHTML = text;
+      });
+    });
+</script>
+
+
+</body>
+</html>
