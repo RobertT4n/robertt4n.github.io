@@ -157,10 +157,10 @@ max-width: 100%;
 @media only screen and (max-width: 490px) {
   #calcifer-image {
     position: fixed;
-    bottom: 25px;
-    right: px;
+    bottom: 28.5px;
+    right: 320px;
     z-index: 51;
-    width: 85px;
+    width: 65px;
     display: flex; 
     flex-direction: column  }
   }
