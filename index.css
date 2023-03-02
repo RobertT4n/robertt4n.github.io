@@ -66,22 +66,34 @@ max-width: 100%;
   width: 100%;
 }
 
-@media only screen and (max-width: 426px) {
+
+
+@media only screen and (max-width: 490px) {
   .slider-container {
     width: 100%;
-
   }
-
-  .w3-bar {
+  
+  .w2-bar {
     position:sticky;
     bottom: 0;
     background-color: #7642AA;
     display: flex;
     flex-direction: column;
-    justify-content: right;
-    height: 80px;
+    justify-content: center !important;
+      padding-top: 40px !important;
+      padding-right: 5px !important;
+    height: auto;
     width: 100%;
   }
+  
+  .w2-bar a {
+    width: 100%;
+    text-align: center;
+     font-size: 15px !important;
+      justify-content: center !important;
+  color: red !important;
+  }
+}
 
 
 .slider {
@@ -116,7 +128,6 @@ max-width: 100%;
   animation: caption-scroll 20s linear infinite;
 }
 
-}
 
 
 #cat-image {
@@ -142,3 +153,15 @@ max-width: 100%;
   z-index: 51;
   width: 125px;
 }
+
+@media only screen and (max-width: 490px) {
+  #calcifer-image {
+    position: fixed;
+    bottom: 25px;
+    right: px;
+    z-index: 51;
+    width: 85px;
+    display: flex; 
+    flex-direction: column  }
+  }
+  
