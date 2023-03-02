@@ -1,0 +1,17 @@
+.slider-container {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .slider {
+    display: flex;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+  }
+  
+  .slider img {
+    width: 100%;
+    height: auto;
+    margin-right: 10px;
+  }
+  
