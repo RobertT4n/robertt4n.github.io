@@ -40,7 +40,7 @@ h3 {
   position: absolute;
   width: 40px;
   height: 35px;
-  background-image: url(HorusBook.png);
+  background-image: url(images/HorusBook.png);
   background-size: contain;
   animation: fall 10s ease-in-out infinite;
   animation-name: fall;
@@ -54,6 +54,7 @@ h3 {
     top: 100%;
   }
 }
+
 
 
 
