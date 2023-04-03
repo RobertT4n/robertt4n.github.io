@@ -1,5 +1,7 @@
 
 
+
+
 body {
   margin: 0;
   font-family: Helvetica, sans-serif;
@@ -7,6 +9,8 @@ body {
    font-family: 'PT Mono', monospace;
    
 }
+
+
 
 @font-face {
   font-family: 'PT Mono';
@@ -220,7 +224,7 @@ body.scrolled #section2 {
 
 
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 900px) {
   #section1 h1 {
     font-size: 30px;
   }
@@ -241,6 +245,23 @@ body.scrolled #section2 {
   position: absolute;
   top: 10.5px;
 }
+
+#canvas {
+  width: 490px;
+  height: 2750px;
+  max-width: 100%;
+}
+
+  html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+#canvas {
+    width: 100%;
+    height: calc(max-content - 1000px); /* 200px is an estimate for the height of the "My Journey" div */
+  }
+
   
 }
 
@@ -256,7 +277,10 @@ body.scrolled #section2 {
   left: 0;
   z-index: -1;
   clear: both;
+  width: 100%;
 }
+
+
 
 #section3 {
   display: block;
