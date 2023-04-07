@@ -1,7 +1,6 @@
 
 
 
-
 body {
   margin: 0;
   font-family: Helvetica, sans-serif;
@@ -74,7 +73,7 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: -2;
+  z-index: 2;
 
   position: relative;
   
@@ -261,6 +260,11 @@ body.scrolled #section2 {
     width: 100%;
     height: calc(max-content - 1000px); /* 200px is an estimate for the height of the "My Journey" div */
   }
+
+
+.menu {
+  z-index: 999;
+}
 
   
 }
